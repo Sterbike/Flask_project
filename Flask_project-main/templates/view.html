@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List</title>
+</head>
+<body>
+
+<h3>Person Information</h3>
+<table border=5>
+    <thead>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Email</td>
+        <td>Favorite Minecraft Mob</td>
+        <td>Favorite Football Team</td>
+        <td>Favorite Food</td>
+        <td>Favorite Car</td>
+    </thead>
+
+    {% for row in rows %}
+
+        <tr>
+            <td>{{row["id"]}}</td>
+            <td>{{row["name"]}}</td>
+            <td>{{row["email"]}}</td>
+            <td>{{row["fav_minecraft_mob"]}}</td>
+            <td>{{row["fav_football_team"]}}</td>
+            <td>{{row["fav_food"]}}</td>
+            <td>{{row["fav_car"]}}</td>
+        </tr>
+
+    {% endfor %}
+</table>
+<br><br>
+
+<a href="/">Go back to home page</a>
+
+</body>
+</html>  
